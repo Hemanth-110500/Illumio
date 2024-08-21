@@ -28,7 +28,7 @@ Your project directory should be structured as follows:
 
   FlowLogProcessing/
 
-│
+
 ├── main.py
 
 ├── clean_csv.py
