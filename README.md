@@ -27,6 +27,7 @@ Flow Log File: The main.py and clean_flowlogs.py scripts require a flow log file
 Your project directory should be structured as follows:
 
   FlowLogProcessing/
+
 │
 ├── main.py
 
