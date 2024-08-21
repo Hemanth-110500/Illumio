@@ -67,7 +67,7 @@ The main.py script processes flow log data by matching each log entry with a tag
 tag_counts.csv: Contains the counts of each tag.
 port_protocol_counts.csv: Contains the counts of each port/protocol combination.
 
-Command-Line Arguments:
+**Command-Line Arguments**:
 
 <flow_log_file>: Path to the input flow log file (e.g., vpc_flowlogs.txt).
 <lookup_table_file>: Path to the lookup table CSV file (e.g., lookup_table.csv).
@@ -76,23 +76,23 @@ Command-Line Arguments:
 python3 main.py vpc_flowlogs.txt lookup_table.csv
 ```
 
-Output Files:
+**Output Files**:
 
 tag_counts.csv: A CSV file with the tag and corresponding count.
 port_protocol_counts.csv: A CSV file with the port, protocol, and corresponding count.
 
-Error Handling:
+**Error Handling**:
 
 The script handles missing or incorrectly formatted lines in the flow log file by skipping them and logging a message.
 Errors in loading the lookup table or processing the logs (e.g., missing files, incorrect formats) will result in the script printing an error message and exiting.
 
-clean_csv.py
+**2. clean_csv.py**
 
 Description:
 
 The clean_csv.py script cleans a CSV file by removing leading and trailing whitespace from headers and data fields. It writes the cleaned data to a new output file and ensures that only non-empty rows are processed.
 
-Arguments:
+**Arguments**:
 
 input_file_path: Path to the input CSV file (e.g., lookup_table.csv).
 output_file_path: Path to the output cleaned CSV file (e.g., lookup_table_clean.csv).
@@ -101,40 +101,40 @@ output_file_path: Path to the output cleaned CSV file (e.g., lookup_table_clean.
 python3 clean_csv.py
 ```
 
-Output File:
+**Output File**:
 
 lookup_table_clean.csv: A cleaned version of the input CSV file.
 
-Error Handling:
+**Error Handling**:
 
 The script handles file-related errors such as missing input files and issues during file reading or writing.
 
-clean_flowlogs.py
+**3. clean_flowlogs.py**
 
 Description:
 
 The clean_flowlogs.py script cleans a flow log file by removing leading and trailing whitespace from each line and discarding empty lines. The cleaned flow log is written to a new output file.
 
-Arguments:
+**Arguments**:
 
 input_file: Path to the input flow log file (e.g., vpc_flowlogs.txt).
 output_file: Path to the output cleaned flow log file (e.g., cleaned_vpc_flow_logs.txt).
 
-Example Usage:
+**Example Usage**:
 
 ```bash
 python3 clean_flowlogs.py
 ```
 
-Output File:
+**Output File**:
 
 cleaned_vpc_flow_logs.txt: A cleaned version of the input flow log file.
 
-Error Handling
+**Error Handling**:
 
 The script handles file-related errors such as missing input files and issues during file reading or writing.
 
-Best Practices Followed
+**Best Practices Followed**
 
 Error Handling: All scripts include robust error handling to manage issues such as missing files, incorrect formats, and unexpected exceptions.
 Modularity: Each script focuses on a single responsibility (e.g., processing flow logs, cleaning CSV files), making the code easier to maintain and extend.
