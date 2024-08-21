@@ -136,8 +136,11 @@ The script handles file-related errors such as missing input files and issues du
 
 **Best Practices Followed**
 
-Error Handling: All scripts include robust error handling to manage issues such as missing files, incorrect formats, and unexpected exceptions.
-Modularity: Each script focuses on a single responsibility (e.g., processing flow logs, cleaning CSV files), making the code easier to maintain and extend.
-Readability: The code includes comments and docstrings to ensure that it is easy to understand and follow.
-File Handling: The scripts use context managers (with statements) to ensure files are properly opened and closed, preventing resource leaks.
+**1. Error Handling**: All scripts include robust error handling to manage issues such as missing files, incorrect formats, and unexpected exceptions.
+
+**2. Modularity**: Each script focuses on a single responsibility (e.g., processing flow logs, cleaning CSV files), making the code easier to maintain and extend.
+
+**3. Readability**: The code includes comments and docstrings to ensure that it is easy to understand and follow.
+
+**4. File Handling**: The scripts use context managers (with statements) to ensure files are properly opened and closed, preventing resource leaks.
 
