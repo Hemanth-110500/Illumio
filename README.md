@@ -71,3 +71,16 @@ Command-Line Arguments:
 
 <flow_log_file>: Path to the input flow log file (e.g., vpc_flowlogs.txt).
 <lookup_table_file>: Path to the lookup table CSV file (e.g., lookup_table.csv).
+
+
+python3 main.py vpc_flowlogs.txt lookup_table.csv
+
+Output Files:
+
+tag_counts.csv: A CSV file with the tag and corresponding count.
+port_protocol_counts.csv: A CSV file with the port, protocol, and corresponding count.
+
+Error Handling:
+
+The script handles missing or incorrectly formatted lines in the flow log file by skipping them and logging a message.
+Errors in loading the lookup table or processing the logs (e.g., missing files, incorrect formats) will result in the script printing an error message and exiting.
