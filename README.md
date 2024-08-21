@@ -59,7 +59,7 @@ lookup_table_clean.csv: The cleaned version of the lookup_table.csv file generat
 
 ## Scripts Usage: 
 
-1. main.py
+main.py
 
 Description
 The main.py script processes flow log data by matching each log entry with a tag from a lookup table. The script generates two output CSV files:
