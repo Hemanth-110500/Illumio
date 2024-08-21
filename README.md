@@ -84,3 +84,15 @@ Error Handling:
 
 The script handles missing or incorrectly formatted lines in the flow log file by skipping them and logging a message.
 Errors in loading the lookup table or processing the logs (e.g., missing files, incorrect formats) will result in the script printing an error message and exiting.
+
+clean_csv.py
+
+Description:
+
+The clean_csv.py script cleans a CSV file by removing leading and trailing whitespace from headers and data fields. It writes the cleaned data to a new output file and ensures that only non-empty rows are processed.
+
+Arguments:
+
+input_file_path: Path to the input CSV file (e.g., lookup_table.csv).
+output_file_path: Path to the output cleaned CSV file (e.g., lookup_table_clean.csv).
+
