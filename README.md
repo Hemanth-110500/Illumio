@@ -59,7 +59,7 @@ Your project directory should be structured as follows:
 
 ## Scripts Usage: 
 
-main.py
+**1. main.py**
 
 Description
 The main.py script processes flow log data by matching each log entry with a tag from a lookup table. The script generates two output CSV files:
