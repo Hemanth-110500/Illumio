@@ -3,7 +3,10 @@ Take Home Assessment
 
 
 ## Overview: 
-This project consists of three main Python scripts designed to process flow log data and clean CSV and log files:
+
+This project consists of three main Python scripts designed to process flow log data and clean CSV and log files. The scripts are lightweight and utilize only built-in Python libraries, ensuring that they can be run on any machine with Python 3.x installed without requiring additional dependencies.
+
+## Main Scripts:
 
 **main.py**: Processes flow log data and tags each log entry based on a lookup table. It generates output files containing the counts of each tag and each port/protocol combination.
 
@@ -21,6 +24,14 @@ Before running the scripts, ensure you have the following:
 **CSV Files**: The main.py and clean_csv.py scripts require input CSV files to operate.
 
 **Flow Log File**: The main.py and clean_flowlogs.py scripts require a flow log file to process.
+
+## Assumptions:
+
+**Log Format**: The scripts support only the default log format. Custom log formats are not supported.
+
+**Version Support**: Only version 2 of the flow logs is supported. The scripts may not function correctly with other versions.
+
+**Default Libraries**: The scripts avoid using non-default libraries like Hadoop, Spark, Pandas, etc., to ensure ease of review and execution on a local machine.
 
 ## Directory Structure:
 
@@ -134,6 +145,22 @@ cleaned_vpc_flow_logs.txt: A cleaned version of the input flow log file.
 
 The script handles file-related errors such as missing input files and issues during file reading or writing.
 
+## Tests and Validation
+
+**Testing Overview**:
+
+**Unit Tests**: Unit tests were performed on each script to ensure that they correctly handle typical inputs and edge cases (e.g., missing files, incorrectly formatted data).
+
+**Manual Testing**: The scripts were manually tested with sample data to verify their functionality.
+
+**Error Handling**: Tests included verifying that the scripts gracefully handle errors such as missing files, incorrect formats, and empty input files.
+
+**Test Results**:
+
+**Success**: The scripts successfully processed the provided sample data, generated the expected output files, and handled errors as expected.
+
+**Performance**: The scripts run efficiently on a standard local machine without any noticeable delays or performance issues.
+
 **Best Practices Followed**
 
 **1. Error Handling**: All scripts include robust error handling to manage issues such as missing files, incorrect formats, and unexpected exceptions.
@@ -143,4 +170,9 @@ The script handles file-related errors such as missing input files and issues du
 **3. Readability**: The code includes comments and docstrings to ensure that it is easy to understand and follow.
 
 **4. File Handling**: The scripts use context managers (with statements) to ensure files are properly opened and closed, preventing resource leaks.
+
+
+## Conclusion
+
+This take home assessment provides a straightforward and efficient solution for processing and cleaning flow log and CSV files. By adhering to the constraints of using only built-in libraries, the scripts are easily portable and can be executed on any machine with Python 3.x installed.
 
