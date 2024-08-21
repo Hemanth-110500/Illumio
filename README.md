@@ -21,3 +21,17 @@ Required Libraries: The scripts use the built-in Python libraries (csv, collecti
 CSV Files: The main.py and clean_csv.py scripts require input CSV files to operate.
 
 Flow Log File: The main.py and clean_flowlogs.py scripts require a flow log file to process.
+
+## Directory Structure:
+
+Your project directory should be structured as follows:
+
+  FlowLogProcessing/
+│
+├── main.py
+├── clean_csv.py
+├── clean_flowlogs.py
+├── lookup_table.csv
+├── vpc_flowlogs.txt
+├── cleaned_vpc_flow_logs.txt
+└── lookup_table_clean.csv
