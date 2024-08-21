@@ -72,8 +72,9 @@ Command-Line Arguments:
 <flow_log_file>: Path to the input flow log file (e.g., vpc_flowlogs.txt).
 <lookup_table_file>: Path to the lookup table CSV file (e.g., lookup_table.csv).
 
-
+```bash
 python3 main.py vpc_flowlogs.txt lookup_table.csv
+```
 
 Output Files:
 
