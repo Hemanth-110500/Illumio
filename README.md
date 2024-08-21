@@ -98,7 +98,7 @@ input_file_path: Path to the input CSV file (e.g., lookup_table.csv).
 output_file_path: Path to the output cleaned CSV file (e.g., lookup_table_clean.csv).
 
 ```bash
-python3 clean_csv.py lookup_table.csv lookup_table_clean.csv
+python3 clean_csv.py
 ```
 
 
